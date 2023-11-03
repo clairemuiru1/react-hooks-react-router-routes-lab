@@ -8,6 +8,7 @@ import Movies from "./Movies";
 
 function App() {
   return <div>
+    <NavBar/>
      <Route exact path="/movies">
       <Movies />
     </Route>
@@ -20,7 +21,7 @@ function App() {
     <Route exact path="/">
       <Home />
     </Route>
-    <NavBar/>
+    
   </div>;
 }
 
