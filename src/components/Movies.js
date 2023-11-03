@@ -5,13 +5,15 @@ function Movies() {
   return (
     <div>
       <h1>Movies Page</h1>
-      {movies.map((movie, index) => {
+     {movies.map((movies,index)=>{
+      return(
         <ul key={index}>
-          <li>Name: {movie.title}</li>
-          <li>Time: {movie.time}</li>
-          <li>Genres: {movie.genres}</li>
-        </ul>
-      })}
+        <li>Name: {movies.title}</li>
+        <li>Time: {movies.time}</li>
+        <li>Genres: {movies.genres}</li>
+      </ul>
+      )
+     })}
     </div>
   );
 }
